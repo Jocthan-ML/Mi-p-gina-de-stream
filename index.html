@@ -74,33 +74,41 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             border: 1px solid rgba(255,255,255,0.1);
+            height: 55px; /* Altura uniforme para todos */
+            box-sizing: border-box;
         }
 
-        /* MODIFICACIÓN: Botón KICK estilo Imagen Original */
+        /* Botón KICK - Ajustado a la forma de los demás */
         .btn-kick {
-            background: #000 !important; /* Fondo negro */
-            color: #53fc18 !important; /* Verde Neón */
-            font-family: 'Press Start 2P', cursive; /* Fuente Pixel */
-            font-size: 0.8rem !important; /* Tamaño ajustado para fuente pixel */
-            border: 3px solid #53fc18 !important; /* Borde verde cuadrado */
-            border-radius: 0px !important; /* Cuadrado total como la imagen */
-            flex-direction: column; /* Icono arriba, texto abajo */
-            gap: 8px;
-            box-shadow: 0 0 15px rgba(83, 252, 24, 0.4);
+            background: #000;
+            border: 1px solid #53fc18;
+            box-shadow: 0 0 15px rgba(83, 252, 24, 0.2);
         }
 
-        .btn-kick i {
-            font-size: 1.5rem;
-            /* Efecto de bloque para la K */
-            background: #53fc18;
+        /* El icono 'K' pixelado de la imagen */
+        .k-pixel {
+            background-color: #53fc18;
             color: #000;
-            padding: 5px 10px;
-            border-radius: 4px;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 14px;
+            padding: 4px 8px;
+            border-radius: 2px; /* Ligeramente cuadrado como pixel art */
+            display: inline-block;
+            line-height: 1;
+        }
+
+        /* El texto 'KICK' pixelado */
+        .text-kick {
+            color: #53fc18;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         .btn-kick:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(83, 252, 24, 0.7);
+            box-shadow: 0 0 20px rgba(83, 252, 24, 0.5);
+            border-color: #53fc18;
         }
 
         .btn-facebook {
@@ -115,7 +123,6 @@
         .btn-tiktok {
             background: #000;
             border: 1px solid #fe2c55;
-            position: relative;
             box-shadow: -2px -2px 0px #25f4ee, 2px 2px 0px #fe2c55;
         }
         .btn-tiktok:hover {
@@ -141,7 +148,8 @@
         <div class="descripcion">Streamer Gamer / Content Creator</div>
 
         <a href="https://kick.com/jocthanM" target="_blank" class="boton btn-kick">
-            <i class="fa-solid fa-k"></i> KICK
+            <span class="k-pixel">K</span>
+            <span class="text-kick">KICK</span>
         </a>
 
         <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton btn-facebook">
