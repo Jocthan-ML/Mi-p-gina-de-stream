@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoto[G.M] | Hub Digital</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <style>
         :root {
             --fondo: #050505;
-            --morado-vivo: #bc13fe; /* Un morado mucho más brillante */
+            --morado-vivo: #bc13fe;
             --verde-neon: #39FF14;
             --cristal: rgba(255, 255, 255, 0.05);
         }
@@ -30,7 +33,7 @@
 
         .card {
             background: var(--cristal);
-            backdrop-filter: blur(15px); /* Efecto de vidrio esmerilado */
+            backdrop-filter: blur(15px);
             border: 1px solid rgba(188, 19, 254, 0.3);
             border-radius: 24px;
             padding: 50px 40px;
@@ -41,7 +44,6 @@
             position: relative;
         }
 
-        /* Detalle decorativo de esquina */
         .card::before {
             content: "";
             position: absolute;
@@ -88,7 +90,10 @@
         }
 
         .boton {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin: 15px 0;
             padding: 16px;
             background: linear-gradient(45deg, rgba(188, 19, 254, 0.1), transparent);
@@ -127,15 +132,15 @@
         <h1>Yoto[G.M]</h1>
         <p style="color: #aaa; margin-bottom: 30px;">Digital Creator & Content Hub</p>
         
-        <a href="https://kick.com/jocthanM" target="_blank" class="boton" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <a href="https://kick.com/jocthanM" target="_blank" class="boton">
             <i class="fa-solid fa-play"></i> KICK LIVE
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton">
             <i class="fa-brands fa-facebook"></i> FACEBOOK
         </a>
 
-        <a href="https://www.tiktok.com/@yoto.gm" target="_blank" class="boton" style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <a href="https://www.tiktok.com/@yoto.gm" target="_blank" class="boton">
             <i class="fa-brands fa-tiktok"></i> TIKTOK
         </a>
         
