@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoto[G.M] | Hub Digital</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
@@ -28,32 +27,33 @@
             justify-content: center;
             min-height: 100vh;
             margin: 0;
-            overflow: hidden;
         }
 
         .card {
             background: var(--cristal);
             backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
             border: 1px solid rgba(188, 19, 254, 0.3);
             border-radius: 24px;
-            padding: 50px 40px;
+            padding: 40px;
             width: 90%;
             max-width: 400px;
+            min-height: 450px; /* Asegura que la tarjeta siempre tenga tamaño */
             text-align: center;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             position: relative;
+            z-index: 10;
         }
 
-        /* Estilo para tu imagen de Logo */
         .logo-img {
             width: 100%;
             max-width: 280px;
             height: auto;
-            margin-bottom: 10px;
+            margin: 0 auto 10px auto;
+            display: block;
             filter: drop-shadow(0 0 15px var(--morado-vivo));
         }
 
-        /* Estilo para la nueva descripción */
         .descripcion {
             font-family: 'Orbitron', sans-serif;
             color: var(--verde-neon);
@@ -61,7 +61,6 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 30px;
-            text-shadow: 0 0 5px rgba(57, 255, 20, 0.5);
         }
 
         .card::before {
@@ -76,7 +75,7 @@
 
         .status {
             color: var(--verde-neon);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 20px;
@@ -95,29 +94,16 @@
         }
 
         @keyframes pulso {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
+            0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; }
         }
 
         .boton {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 12px;
             margin: 15px 0;
             padding: 16px;
-            background: linear-gradient(45deg, rgba(188, 19, 254, 0.1), transparent);
+            background: rgba(188, 19, 254, 0.1);
             color: white;
-            text-decoration: none;
-            border: 1px solid rgba(188, 19, 254, 0.5);
-            border-radius: 12px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .boton:hover {
-            border-color: var(--verde-neon);
+            text
