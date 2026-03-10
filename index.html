@@ -59,27 +59,57 @@
             margin-bottom: 25px;
         }
 
-        .boton {
+       .boton {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            margin: 12px 0;
-            padding: 15px;
-            background: rgba(188, 19, 254, 0.1);
+            margin: 15px 0;
+            padding: 16px;
             color: white;
             text-decoration: none;
-            border: 1px solid rgba(188, 19, 254, 0.3);
-            border-radius: 10px;
+            border-radius: 12px;
             font-weight: 700;
-            transition: 0.3s;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .boton:hover {
-            border-color: var(--verde);
-            background: rgba(57, 255, 20, 0.1);
-            color: var(--verde);
-            transform: translateY(-3px);
+        /* Botón KICK - Verde original y estilo técnico */
+        .btn-kick {
+            background: #53fc18;
+            color: #000 !important; /* Texto negro para contraste */
+            font-family: 'Orbitron', sans-serif;
+            box-shadow: 0 4px 15px rgba(83, 252, 24, 0.3);
+        }
+        .btn-kick:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(83, 252, 24, 0.6);
+            background: #47d615;
+        }
+
+        /* Botón FACEBOOK - Azul oficial */
+        .btn-facebook {
+            background: #1877F2;
+            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
+        }
+        .btn-facebook:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(24, 119, 242, 0.5);
+        }
+
+        /* Botón TIKTOK - Negro con acentos Neón */
+        .btn-tiktok {
+            background: #000;
+            border: 1px solid #fe2c55;
+            position: relative;
+            box-shadow: -2px -2px 0px #25f4ee, 2px 2px 0px #fe2c55;
+        }
+        .btn-tiktok:hover {
+            transform: scale(1.05);
+            box-shadow: -4px -4px 0px #25f4ee, 4px 4px 0px #fe2c55;
         }
 
         .status {
@@ -99,18 +129,14 @@
         
         <div class="descripcion">Streamer Gamer / Content Creator</div>
 
-        <a href="https://kick.com/jocthanM" target="_blank" class="boton">
+        <a href="https://kick.com/jocthanM" target="_blank" class="boton btn-kick">
             <i class="fa-solid fa-k"></i> KICK
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton">
+        <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton btn-facebook">
             <i class="fa-brands fa-facebook"></i> FACEBOOK
         </a>
 
-        <a href="https://www.tiktok.com/@yoto.gm" target="_blank" class="boton">
+        <a href="https://www.tiktok.com/@yoto.gm" target="_blank" class="boton btn-tiktok">
             <i class="fa-brands fa-tiktok"></i> TIKTOK
         </a>
-    </div>
-
-</body>
-</html>
