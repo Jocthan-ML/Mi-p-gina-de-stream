@@ -12,6 +12,7 @@
             --fondo: #050505;
             --morado: #bc13fe;
             --verde: #39FF14;
+            --kick-verde: #53fc18;
         }
 
         body {
@@ -62,7 +63,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 12px;
+            gap: 15px;
             margin: 15px 0;
             padding: 16px;
             color: white;
@@ -72,94 +73,54 @@
             font-size: 1.1rem;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-transform: uppercase;
-            letter-spacing: 1px;
             border: 1px solid rgba(255,255,255,0.1);
-            height: 55px; /* Altura uniforme para todos */
+            height: 60px;
             box-sizing: border-box;
         }
 
-        /* Botón KICK - Ajustado a la forma de los demás */
+        /* BOTÓN KICK PERSONALIZADO */
         .btn-kick {
             background: #000;
-            border: 1px solid #53fc18;
-            box-shadow: 0 0 15px rgba(83, 252, 24, 0.2);
+            border: 1px solid var(--kick-verde);
+            box-shadow: 0 0 10px rgba(83, 252, 24, 0.2);
         }
 
-        /* El icono 'K' pixelado de la imagen */
-        .k-pixel {
-            background-color: #53fc18;
+        /* LOGO 'K' CIRCULAR PIXELADO */
+        .k-pixel-box {
+            background-color: var(--kick-verde);
             color: #000;
             font-family: 'Press Start 2P', cursive;
-            font-size: 14px;
-            padding: 4px 8px;
-            border-radius: 2px; /* Ligeramente cuadrado como pixel art */
-            display: inline-block;
-            line-height: 1;
+            font-size: 12px;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Efecto pixelado redondo (esquinas cortadas) */
+            clip-path: polygon(
+                20% 0%, 80% 0%, 100% 20%, 100% 80%, 
+                80% 100%, 20% 100%, 0% 80%, 0% 20%
+            );
+            line-height: 0;
+            flex-shrink: 0;
         }
 
-        /* El texto 'KICK' pixelado */
         .text-kick {
-            color: #53fc18;
+            color: var(--kick-verde);
             font-family: 'Press Start 2P', cursive;
             font-size: 14px;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            margin-top: 4px; /* Alineación visual con el logo */
         }
 
         .btn-kick:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgba(83, 252, 24, 0.5);
-            border-color: #53fc18;
+            box-shadow: 0 0 20px rgba(83, 252, 24, 0.4);
         }
 
         .btn-facebook {
             background: #1877F2;
-            box-shadow: 0 4px 15px rgba(24, 119, 242, 0.3);
         }
-        .btn-facebook:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(24, 119, 242, 0.5);
-        }
-
+        
         .btn-tiktok {
             background: #000;
-            border: 1px solid #fe2c55;
-            box-shadow: -2px -2px 0px #25f4ee, 2px 2px 0px #fe2c55;
-        }
-        .btn-tiktok:hover {
-            transform: scale(1.05);
-            box-shadow: -4px -4px 0px #25f4ee, 4px 4px 0px #fe2c55;
-        }
-
-        .status {
-            color: var(--verde);
-            font-size: 0.8rem;
-            margin-bottom: 20px;
-            letter-spacing: 1px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="card">
-        <div class="status">● ONLINE</div>
-        
-        <img src="https://raw.githubusercontent.com/Jocthan-ML/Mi-p-gina-de-stream/main/Yoto%20Logo.png" alt="Yoto GM Logo" class="logo-img">
-        
-        <div class="descripcion">Streamer Gamer / Content Creator</div>
-
-        <a href="https://kick.com/jocthanM" target="_blank" class="boton btn-kick">
-            <span class="k-pixel">K</span>
-            <span class="text-kick">KICK</span>
-        </a>
-
-        <a href="https://www.facebook.com/profile.php?id=100092795311838" target="_blank" class="boton btn-facebook">
-            <i class="fa-brands fa-facebook"></i> FACEBOOK
-        </a>
-
-        <a href="https://www.tiktok.com/@yoto.gm" target="_blank" class="boton btn-tiktok">
-            <i class="fa-brands fa-tiktok"></i> TIKTOK
-        </a>
-    </div>
-
-</body>
-</html>
