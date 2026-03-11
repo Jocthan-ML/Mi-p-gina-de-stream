@@ -15,6 +15,8 @@
             --kick-verde: #53fc18;
             --youtube-rojo: #FF0000;
             --facebook-azul: #1877F2;
+            --tiktok-cian: #25f4ee;
+            --tiktok-rosa: #fe2c55;
         }
 
         @keyframes pulse {
@@ -130,27 +132,31 @@
         /* YOUTUBE */
         .btn-youtube { background: #000; border: 1px solid var(--youtube-rojo); }
         .btn-youtube i { color: var(--youtube-rojo); font-size: 1.4rem; }
-        .btn-youtube:hover { transform: scale(1.05); box-shadow: 0 0 15px var(--youtube-rojo); }
+        .btn-youtube:hover { transform: scale(1.05); box-shadow: 0 0 20px var(--youtube-rojo); }
 
-        /* FACEBOOK (Azul con borde blanco) */
+        /* FACEBOOK */
         .btn-facebook { 
             background: var(--facebook-azul); 
-            border: 2px solid #ffffff; /* Marco blanco */
+            border: 2px solid #ffffff; 
             color: #ffffff;
         }
         .btn-facebook i { font-size: 1.4rem; }
         .btn-facebook:hover { 
             transform: scale(1.05); 
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); 
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6); 
         }
 
-        /* TIKTOK */
+        /* TIKTOK (EFECTO GLOW MEJORADO) */
         .btn-tiktok {
             background: #000;
-            border: 1px solid #fe2c55;
-            box-shadow: -2px -2px 0px #25f4ee, 2px 2px 0px #fe2c55;
+            border: 1px solid var(--tiktok-rosa);
+            box-shadow: -2px -2px 0px var(--tiktok-cian), 2px 2px 0px var(--tiktok-rosa);
         }
-        .btn-tiktok:hover { transform: scale(1.05); }
+        .btn-tiktok:hover { 
+            transform: scale(1.05); 
+            /* Brillo doble: Cian a la izquierda y Rosa a la derecha */
+            box-shadow: -5px 0 20px var(--tiktok-cian), 5px 0 20px var(--tiktok-rosa);
+        }
 
         .rights-text {
             margin-top: 30px; 
